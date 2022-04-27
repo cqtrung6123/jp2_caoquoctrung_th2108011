@@ -10,17 +10,16 @@ public class Home {
             int ch=scanner.nextInt();
             switch (ch){
                 case 1:
-                    System.out.println("Enter your id:");
-                    int id=scanner.nextInt();
                     System.out.println("Enter your Name:");
                     String name=scanner.next();
                     System.out.println("Enter your Email:");
                     String email=scanner.next();
                     System.out.println("Enter your Phone:");
                     String phone=scanner.next();
-                    manager.addCustomer(id,name,email,phone);
+                    manager.addCustomer(name,email,phone);
                     break;
                 case 2:
+                    System.out.println("--Search By name--");
                     System.out.println("Enter your name:");
                     name=scanner.next();
                     manager.findByName(name);

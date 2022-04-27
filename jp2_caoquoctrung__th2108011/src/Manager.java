@@ -14,9 +14,9 @@ public class Manager {
     }
 
 
-    public void addCustomer(int id,String name,String email,String phone){
+    public void addCustomer(String name,String email,String phone){
         Customer customer=new Customer();
-        customer.setId(id);
+
         customer.setName(name);
         customer.setEmail(email);
         customer.setPhone(phone);
